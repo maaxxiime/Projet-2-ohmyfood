@@ -1,0 +1,22 @@
+{
+  "name": "projet-2-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/index.scss:./styles/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaxxiime/Projet-2-ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maaxxiime/Projet-2-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/maaxxiime/Projet-2-ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
