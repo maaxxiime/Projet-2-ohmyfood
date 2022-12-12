@@ -1,12 +1,9 @@
-body {
-  background-color: black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-div {
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  color: blue;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
