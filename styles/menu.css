@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
 }
 
 header {
@@ -81,6 +82,44 @@ header a img {
   box-shadow: #d8d8d8 0 5px 15px;
   position: relative;
   overflow: hidden;
+  animation: appear 500ms ease;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu .container .card.card-1 {
+  animation-delay: 250ms;
+}
+.menu .container .card.card-2 {
+  animation-delay: 500ms;
+}
+.menu .container .card.card-3 {
+  animation-delay: 750ms;
+}
+.menu .container .card.card-4 {
+  animation-delay: 1000ms;
+}
+.menu .container .card.card-5 {
+  animation-delay: 1250ms;
+}
+.menu .container .card.card-6 {
+  animation-delay: 1500ms;
+}
+.menu .container .card.card-7 {
+  animation-delay: 1750ms;
+}
+.menu .container .card.card-8 {
+  animation-delay: 2000ms;
+}
+.menu .container .card.card-9 {
+  animation-delay: 2250ms;
 }
 .menu .container .card .card-title {
   font-weight: 600;
@@ -142,6 +181,62 @@ header a img {
 .menu .container .card:hover div .card-price {
   transform: translateX(-55px);
   transition: 0.5s;
+}
+
+.button {
+  color: white;
+  width: 190px;
+  height: 45px;
+  border-radius: 2rem;
+  border: none;
+  margin: 30px 0 0 0;
+  font-size: 1rem;
+  background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  font-weight: 600;
+  box-shadow: #8b8b8b 0 5px 15px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: #4e4e4e 0 5px 15px;
+  background: linear-gradient(355deg, rgb(167, 94, 255) 0%, rgb(255, 137, 221) 96%);
+  transition: 0.3s;
+}
+
+footer {
+  background-color: #3c3c3c;
+  display: flex;
+  font-family: Roboto;
+}
+footer .flex-collumn {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 20px;
+}
+footer .flex-collumn a {
+  color: white;
+  text-decoration: none;
+  margin: 4px 0;
+}
+footer .flex-collumn .logo {
+  width: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(104%) contrast(104%);
+  margin-bottom: 15px;
+}
+footer .flex-collumn .flex {
+  display: flex;
+  align-items: center;
+}
+footer .flex-collumn .flex img {
+  width: 12px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(104%) contrast(104%);
+  margin-right: 10px;
+}
+@media screen and (min-width: 1150px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -57,7 +57,6 @@ header {
     margin: 15px 10px 30px 10px;
   }
   button {
-    cursor: pointer;
     width: 210px;
     height: 45px;
     border-radius: 2rem;
@@ -69,9 +68,20 @@ header {
       rgba(147, 86, 220, 1) 0%,
       rgba(255, 121, 218, 1) 96%
     );
+    box-shadow: #8b8b8b 0 5px 15px;
+    transition: 0.3s;
     a {
       color: white;
       text-decoration: none;
+    }
+    &:hover {
+      box-shadow: #4e4e4e 0 5px 15px;
+      background: linear-gradient(
+        355deg,
+        rgb(167, 94, 255) 0%,
+        rgb(255, 137, 221) 96%
+      );
+      transition: 0.3s;
     }
   }
 }
