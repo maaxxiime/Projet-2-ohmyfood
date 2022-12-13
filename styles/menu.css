@@ -76,13 +76,18 @@ header a img {
 .menu .container .card {
   background-color: #ffffff;
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 0.9rem;
   margin: 10px 0;
   box-shadow: #d8d8d8 0 5px 15px;
   position: relative;
   overflow: hidden;
   animation: appear 500ms ease;
+  opacity: 0;
+}
+.menu .container .card.card-1 {
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
 }
 @keyframes appear {
   from {
@@ -94,37 +99,141 @@ header a img {
     transform: translateY(0);
   }
 }
-.menu .container .card.card-1 {
-  animation-delay: 250ms;
-}
 .menu .container .card.card-2 {
-  animation-delay: 500ms;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-3 {
-  animation-delay: 750ms;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-4 {
-  animation-delay: 1000ms;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-5 {
-  animation-delay: 1250ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-6 {
-  animation-delay: 1500ms;
+  animation-delay: 1200ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-7 {
-  animation-delay: 1750ms;
+  animation-delay: 1400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-8 {
-  animation-delay: 2000ms;
+  animation-delay: 1600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card.card-9 {
-  animation-delay: 2250ms;
+  animation-delay: 1800ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu .container .card.card-10 {
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu .container .card .card-title {
   font-weight: 600;
   font-size: 1.15rem;
   margin: 10px 0 0 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 350px;
+  transition: 0.5s;
 }
 .menu .container .card div {
   display: flex;
@@ -174,6 +283,10 @@ header a img {
   transform: rotate(0deg);
   transition: 0.5s;
 }
+.menu .container .card:hover .card-title {
+  transition: 0.5s;
+  width: 200px;
+}
 .menu .container .card:hover div .card-text {
   transition: 0.5s;
   width: 200px;
@@ -181,6 +294,16 @@ header a img {
 .menu .container .card:hover div .card-price {
   transform: translateX(-55px);
   transition: 0.5s;
+}
+@media screen and (min-width: 500px) {
+  .menu .container .card div .card-text {
+    overflow: visible;
+  }
+}
+@media screen and (min-width: 440px) {
+  .menu .container .card .card-title {
+    overflow: visible;
+  }
 }
 
 .button {
