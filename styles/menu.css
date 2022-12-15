@@ -309,6 +309,7 @@ header a img {
 }
 
 .button {
+  cursor: pointer;
   color: white;
   width: 190px;
   height: 45px;

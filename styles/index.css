@@ -49,8 +49,11 @@ header {
   color: #6b6b6b;
   margin: 15px 10px 30px 10px;
 }
-.explorer button {
+.explorer span {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 210px;
   height: 45px;
   border-radius: 2rem;
@@ -58,10 +61,17 @@ header {
   margin-bottom: 50px;
   font-size: 0.95rem;
   background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  box-shadow: #8b8b8b 0 5px 15px;
+  transition: 0.3s;
 }
-.explorer button a {
+.explorer span a {
   color: white;
   text-decoration: none;
+}
+.explorer span:hover {
+  box-shadow: #4e4e4e 0 5px 15px;
+  background: linear-gradient(355deg, rgb(167, 94, 255) 0%, rgb(255, 137, 221) 96%);
+  transition: 0.3s;
 }
 
 .fonctionnement {

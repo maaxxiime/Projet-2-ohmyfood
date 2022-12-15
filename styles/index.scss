@@ -56,7 +56,11 @@ header {
     color: #6b6b6b;
     margin: 15px 10px 30px 10px;
   }
-  button {
+  span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 210px;
     height: 45px;
     border-radius: 2rem;
