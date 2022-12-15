@@ -23,6 +23,8 @@ header a img {
 
 .img-menu img {
   width: 100%;
+  max-height: 1012px;
+  object-fit: cover;
 }
 
 .menu {
