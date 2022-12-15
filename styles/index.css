@@ -235,6 +235,9 @@ header {
   border-top-right-radius: 1rem;
   object-fit: cover;
 }
+.restaurants .container div {
+  position: relative;
+}
 .restaurants .container div .titre {
   margin: 10px 0 0 10px;
   font-weight: 600;
@@ -242,6 +245,48 @@ header {
 .restaurants .container div .description {
   margin: 4px 0 15px 10px;
   color: #6b6b6b;
+}
+.restaurants .container div .heart {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 20px;
+  top: 10px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  background-color: #a8a8a8;
+}
+.restaurants .container div .heart::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -50%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: #a8a8a8;
+}
+.restaurants .container div .heart::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -50%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background-color: #a8a8a8;
+}
+.restaurants .container div .heart:hover {
+  background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  box-shadow: none;
+}
+.restaurants .container div .heart:hover::before {
+  background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  box-shadow: none;
+}
+.restaurants .container div .heart:hover::after {
+  background: linear-gradient(355deg, rgb(195, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  box-shadow: none;
 }
 .restaurants .after::after {
   position: absolute;
