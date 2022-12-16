@@ -106,6 +106,8 @@ header {
         &.card-#{$i} {
           animation-delay: 200ms * $i;
           animation-fill-mode: forwards;
+          // -webkit-animation: ;
+          // -moz-animation: ;
         }
         @keyframes appear {
           from {
