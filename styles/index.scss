@@ -23,6 +23,8 @@ body {
   position: fixed;
   z-index: 1000;
   animation: display 3s linear;
+  -webkit-animation: display 3s linear;
+  -moz-animation: display 3s linear;
   animation-fill-mode: forwards;
 
   .loader {
@@ -34,6 +36,8 @@ body {
     border: 7px solid transparent;
     border-top-color: $primaire;
     animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
 
     &::before,
     &::after {
@@ -77,15 +81,6 @@ body {
       visibility: collapse;
     }
   }
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  box-shadow: 0 0 7px 1px #a5a5a5;
-  margin-bottom: 3px;
 }
 
 .localisation {
@@ -283,58 +278,20 @@ header {
       }
       .heart {
         position: absolute;
-        width: 12px;
-        height: 12px;
         right: 20px;
         top: 10px;
-        transform: rotate(45deg);
         cursor: pointer;
-        background-color: #a8a8a8;
 
-        &::after {
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          top: -50%;
-          border-top-left-radius: 100%;
-          border-top-right-radius: 100%;
-          background-color: #a8a8a8;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          left: -50%;
-          border-top-left-radius: 100%;
-          border-bottom-left-radius: 100%;
-          background-color: #a8a8a8;
-        }
+        img {
+          height: 22px;
+          width: 22px;
 
-        &:hover {
-          background: linear-gradient(
-            355deg,
-            rgba(147, 86, 220, 1) 0%,
-            rgba(255, 121, 218, 1) 96%
-          );
-          box-shadow: none;
-
-          &::before {
+          &:hover {
             background: linear-gradient(
               355deg,
               rgba(147, 86, 220, 1) 0%,
               rgba(255, 121, 218, 1) 96%
             );
-            box-shadow: none;
-          }
-          &::after {
-            background: linear-gradient(
-              355deg,
-              rgb(195, 86, 220) 0%,
-              rgba(255, 121, 218, 1) 96%
-            );
-            box-shadow: none;
           }
         }
       }
@@ -365,45 +322,5 @@ header {
     .container {
       margin: 20px 30px;
     }
-  }
-}
-
-footer {
-  background-color: #3c3c3c;
-  display: flex;
-  font-family: Roboto;
-
-  .flex-collumn {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0 0 20px;
-
-    a {
-      color: white;
-      text-decoration: none;
-      margin: 4px 0;
-    }
-    .logo {
-      width: 100px;
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg)
-        brightness(104%) contrast(104%);
-      margin-bottom: 15px;
-    }
-
-    .flex {
-      display: flex;
-      align-items: center;
-      img {
-        width: 12px;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg)
-          brightness(104%) contrast(104%);
-        margin-right: 10px;
-      }
-    }
-  }
-  @media screen and (min-width: 1150px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

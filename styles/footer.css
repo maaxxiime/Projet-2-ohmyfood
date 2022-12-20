@@ -1,0 +1,38 @@
+footer {
+  background-color: #3c3c3c;
+  display: flex;
+  font-family: Roboto;
+}
+footer .flex-collumn {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 20px;
+}
+footer .flex-collumn a {
+  color: white;
+  text-decoration: none;
+  margin: 4px 0;
+}
+footer .flex-collumn .logo {
+  width: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(104%) contrast(104%);
+  margin-bottom: 15px;
+}
+footer .flex-collumn .flex {
+  display: flex;
+  align-items: center;
+}
+footer .flex-collumn .flex img {
+  width: 12px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(104%) contrast(104%);
+  margin-right: 10px;
+}
+@media screen and (min-width: 1150px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
