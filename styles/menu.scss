@@ -33,7 +33,7 @@ body {
       font-family: Shrikhand;
       font-size: 1.75rem;
     }
-    img {
+    svg {
       cursor: pointer;
       height: 22px;
       width: 22px;
@@ -44,6 +44,7 @@ body {
           rgba(147, 86, 220, 1) 0%,
           rgba(255, 121, 218, 1) 96%
         );
+        border-radius: 50%;
       }
     }
   }

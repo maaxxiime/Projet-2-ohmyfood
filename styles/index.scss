@@ -282,7 +282,7 @@ body {
         top: 10px;
         cursor: pointer;
 
-        img {
+        svg {
           height: 22px;
           width: 22px;
 
@@ -292,6 +292,7 @@ body {
               rgba(147, 86, 220, 1) 0%,
               rgba(255, 121, 218, 1) 96%
             );
+            border-radius: 50%;
           }
         }
       }

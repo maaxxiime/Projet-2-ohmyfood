@@ -27,13 +27,14 @@ body {
   font-family: Shrikhand;
   font-size: 1.75rem;
 }
-.menu .title img {
+.menu .title svg {
   cursor: pointer;
   height: 22px;
   width: 22px;
 }
-.menu .title img:hover {
+.menu .title svg:hover {
   background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
+  border-radius: 50%;
 }
 .menu .container {
   font-family: Roboto;
