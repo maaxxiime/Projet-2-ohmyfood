@@ -280,20 +280,25 @@ body {
         position: absolute;
         right: 20px;
         top: 10px;
-        cursor: pointer;
 
         svg {
+          position: absolute;
           height: 22px;
           width: 22px;
-
-          &:hover {
-            background: linear-gradient(
-              355deg,
-              rgba(147, 86, 220, 1) 0%,
-              rgba(255, 121, 218, 1) 96%
-            );
-            border-radius: 50%;
+          right: 0;
+          cursor: pointer;
+        }
+        &:hover {
+          .regular {
+            display: none;
           }
+          .solid {
+            display: block;
+            fill: $primaire;
+          }
+        }
+        .solid {
+          display: none;
         }
       }
     }

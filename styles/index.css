@@ -247,15 +247,23 @@ body {
   position: absolute;
   right: 20px;
   top: 10px;
-  cursor: pointer;
 }
 .restaurants .container div .heart svg {
+  position: absolute;
   height: 22px;
   width: 22px;
+  right: 0;
+  cursor: pointer;
 }
-.restaurants .container div .heart svg:hover {
-  background: linear-gradient(355deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 96%);
-  border-radius: 50%;
+.restaurants .container div .heart:hover .regular {
+  display: none;
+}
+.restaurants .container div .heart:hover .solid {
+  display: block;
+  fill: #9356cd;
+}
+.restaurants .container div .heart .solid {
+  display: none;
 }
 .restaurants .after::after {
   position: absolute;
