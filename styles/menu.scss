@@ -51,7 +51,7 @@ body {
         }
         .solid {
           display: block;
-          fill: $primaire;
+          fill: url(#gradient) $primaire;
         }
       }
       .solid {

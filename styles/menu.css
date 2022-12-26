@@ -44,7 +44,7 @@ body {
 }
 .menu .title .heart:hover .solid {
   display: block;
-  fill: #9356cd;
+  fill: url(#gradient) #9356cd;
 }
 .menu .title .heart .solid {
   display: none;

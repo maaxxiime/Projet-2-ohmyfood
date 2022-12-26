@@ -260,10 +260,21 @@ body {
 }
 .restaurants .container div .heart:hover .solid {
   display: block;
-  fill: #9356cd;
 }
 .restaurants .container div .heart .solid {
   display: none;
+}
+.restaurants .container div .heart .gradient-1 {
+  fill: url(#gradient-1) #9356cd;
+}
+.restaurants .container div .heart .gradient-2 {
+  fill: url(#gradient-2) #9356cd;
+}
+.restaurants .container div .heart .gradient-3 {
+  fill: url(#gradient-3) #9356cd;
+}
+.restaurants .container div .heart .gradient-4 {
+  fill: url(#gradient-4) #9356cd;
 }
 .restaurants .after::after {
   position: absolute;

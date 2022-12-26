@@ -294,11 +294,22 @@ body {
           }
           .solid {
             display: block;
-            fill: $primaire;
           }
         }
         .solid {
           display: none;
+        }
+        .gradient-1 {
+          fill: url(#gradient-1) $primaire;
+        }
+        .gradient-2 {
+          fill: url(#gradient-2) $primaire;
+        }
+        .gradient-3 {
+          fill: url(#gradient-3) $primaire;
+        }
+        .gradient-4 {
+          fill: url(#gradient-4) $primaire;
         }
       }
     }
